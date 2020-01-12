@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css"/>
+  <title>Spring</title>
+ </head>
+ <body>
+  <div class="main-container">
+
+    <div class="hero-container">
+      <div class="hero flex-container">
+        <img class="logo" src="assets/images/logo@3x.png" alt="spring logo" />
+        <h1>Find your independent energy supplier and start saving today</h1>
+        <p>Sign up to get notified when we launch.</p>
+
+        <div class="row subscribe">
+          <input placeholder="Your e-mail">
+          <button>Get notified</button>
+        </div>
+      </div>
+
+      <div class="human">
+        <img class="room" src="assets/images/hero@3x.png" alt="person choosing a price" />
+        <div class="slider-container">
+          <div class="slider">
+            <div class="img-card"><img class="img-card" src="./assets/images/card1@3x.png" alt="electricity prices"></div>
+            <div class="img-card"><img class="img-card" src="./assets/images/card2@3x.png" alt="electricity prices"></div>
+            <div class="img-card"><img class="img-card" src="./assets/images/card3@3x.png" alt="electricity prices"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <div class="footer">
+    <div class="footer-content">
+      &copy; 2020 Spring. All rights reserved.
+    </div>
+  </div>
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./assets/js/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        vertical: true,
+        autoplaySpeed: 3000,
+        centerMode: true,
+        focusOnSelect: false,
+        centerPadding: '200px',
+        draggable: false
+      });
+    });
+
+  </script>
+ </body>
+</html>
