@@ -172,3 +172,44 @@ p {
 button {
   z-index: 3;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .main-container {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  .hero.flex-container {
+    width: 90%;
+    padding: 0 5%;
+    padding-bottom: 150px;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(255,0,0,0) 0%, rgb(255, 255, 255) 20%);
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 20px 0 0 0 ;
+    max-height: initial;
+    min-height: initial;
+    overflow: initial;
+  }
+
+  .human {
+    height: 700px;
+    margin-top: -300px;
+    overflow: hidden;
+    margin-left: -150px;
+    z-index: 1;
+    /* max */
+    /* overflow: ; */
+  }
+
+  .footer-content {
+    padding: 0;
+    width: 100%;
+
+    text-align: center;
+  }
+}
