@@ -214,4 +214,9 @@ button {
 
     text-align: center;
   }
+
+  .subscribe button {
+    line-height: 15px;
+    letter-spacing: 0.4px;
+  }
 }
